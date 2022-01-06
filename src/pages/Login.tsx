@@ -24,7 +24,7 @@ export const Login = (): JSX.Element => {
                     />
                     <input
                         type="submit"
-                        defaultValue="Log in"
+                        value="Log in"
                         className="bg-green-400 rounded-lg border-hidden text-white w-full cursor-pointer text-base font-bold h-12 mt-3.5 mb-7"
                     />
                     <a href="/" className="text-green-400 text-sm text-center mb-12">Forgot my password</a>
