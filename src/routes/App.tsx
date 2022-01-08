@@ -8,7 +8,6 @@ import { EditAccount } from '../pages/EditAccount';
 import { NotFound } from '../pages/NotFound'
 import { EmailSent } from '../pages/EmailSent'
 
-import { MyOrderContainer } from '../containers/MyOrderContainer'
 
 function App(): JSX.Element {
 
@@ -18,19 +17,15 @@ function App(): JSX.Element {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-
-            <Route path="/new-password" element={<NewPassword />} />
-
-
+            {/* Password Recovery */}
             <Route path="/email-sent" element={<EmailSent />} />
+            <Route path="/new-password" element={<NewPassword />} />
+            {/* MyAccount */}
             <Route path="/edit-account" element={<EditAccount />} />
-            <Route path="/prueba" element={<MyOrderContainer />} />
-
-
-
+            <Route path="/signup" element={<Signup />} /> {/*Create Account */}
+            {/* Checkout */}
+            {/* Orders */}
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

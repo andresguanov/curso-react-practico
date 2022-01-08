@@ -1,6 +1,6 @@
 export const ShoppingItem = (): JSX.Element => {
     return (
-        <div className="grid grid-cols-4 gap-4 mb-6 items-center">
+        <div className="grid grid-cols-5 gap-4 mb-6 items-center">
             <figure className="m-0">
                 <img
                     className="w-16 h-16 rounded-2xl object-cover"
@@ -10,6 +10,7 @@ export const ShoppingItem = (): JSX.Element => {
             </figure>
             <p className="col-start-2 col-end-4 text-gray-400">Bike</p>
             <p className=" text-base font-bold">$30,00</p>
+            <img src="./icons/icon_close.png" alt="close"></img>
         </div>
     )
 }
