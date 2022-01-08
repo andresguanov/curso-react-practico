@@ -8,6 +8,8 @@ import { EditAccount } from '../pages/EditAccount';
 import { NotFound } from '../pages/NotFound'
 import { EmailSent } from '../pages/EmailSent'
 
+import { MyOrderContainer } from '../containers/MyOrderContainer'
+
 function App(): JSX.Element {
 
   return (
@@ -25,6 +27,8 @@ function App(): JSX.Element {
 
             <Route path="/email-sent" element={<EmailSent />} />
             <Route path="/edit-account" element={<EditAccount />} />
+            <Route path="/prueba" element={<MyOrderContainer />} />
+
 
 
             <Route path="/*" element={<NotFound />} />
