@@ -1,9 +1,10 @@
+import logo from '@logos/logo_yard_sale.svg'
 
 export const NewPassword = (): JSX.Element => {
     return (
         <div className="tracking-wide w-full h-screen grid place-items-center">
             <div className="grid  w-80 ">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" className="mb-12 justify-self-center sm:hidden w-36" />
+                <img src={logo} alt="logo" className="mb-12 justify-self-center sm:hidden w-36" />
                 <h1 className="text-lg font-bold mb-3 text-center">Create a new password</h1>
                 <p className="text-gray-500 text-base font-light mt-0 mb-8 text-center">
                     Enter a new password for your account

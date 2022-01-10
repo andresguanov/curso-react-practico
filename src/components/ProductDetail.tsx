@@ -1,8 +1,11 @@
+import addToCart from '@icons/bt_add_to_cart.svg'
+import close from '@icons/icon_close.png'
+
 export const ProductDetail = (): JSX.Element => {
     return (
         <aside className="w-full sm:w-96 pb-6 absolute right-0">
-            <div className="bg-white w-3.5 h-3.5 absolute top-6 left-6 z-10 p-3 rounded-full cursor-pointer">
-                <img src="./icons/icon_close.png" alt="close" />
+            <div className="bg-white grid place-content-center w-7 h-7 absolute top-6 left-6 z-10 rounded-full cursor-pointer">
+                <img className='w-3 h-3' src={close} alt="close" />
             </div>
             <img
                 className="w-full h-96 object-cover rounded-b-3xl "
@@ -17,7 +20,7 @@ export const ProductDetail = (): JSX.Element => {
                     function, add your hall or workspace.
                 </p>
                 <button className="bg-green-400 rounded-lg border-0 text-white w-full cursor-pointer text-base font-bold h-12 flex items-center justify-center">
-                    <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
+                    <img src={addToCart} alt="add to cart" />
                     Add to cart
                 </button>
             </div>

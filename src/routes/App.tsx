@@ -8,11 +8,13 @@ import { EditAccount } from '../pages/EditAccount';
 import { NotFound } from '../pages/NotFound'
 import { EmailSent } from '../pages/EmailSent'
 
+import { Header } from "../components/Header"
+
 
 function App(): JSX.Element {
 
   return (
-    <div className="App font-san">
+    <div className="App font-sans">
       <Layout>
         <BrowserRouter>
           <Routes>
@@ -26,6 +28,8 @@ function App(): JSX.Element {
             <Route path="/signup" element={<Signup />} /> {/*Create Account */}
             {/* Checkout */}
             {/* Orders */}
+            <Route path="/prueba" element={<Header />} />
+
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

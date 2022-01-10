@@ -1,5 +1,5 @@
-import { ShoppingItem } from '../components/ShoppingItem'
-import { OrderInfo } from '../components/OrderInfo'
+import { ShoppingItem } from '@components/ShoppingItem'
+import { OrderInfo } from '@components/OrderInfo'
 
 
 export const MyOrderContainer = (): JSX.Element => {

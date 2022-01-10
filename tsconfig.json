@@ -14,7 +14,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@pages/*": ["src/pages/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@logos/*": ["src/assets/logos/*"],
+    }
   },
+  "exclude": ["node_modules", "jest.config.js"],
   "include": ["./src/*"]
 }

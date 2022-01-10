@@ -1,5 +1,5 @@
-import { CardsContainer } from '../containers/CardsContainer'
-import { Layout } from '../containers/Layout'
+import { CardsContainer } from '@containers/CardsContainer'
+import { Layout } from '@containers/Layout'
 
 export const Home = (): JSX.Element => {
     return (

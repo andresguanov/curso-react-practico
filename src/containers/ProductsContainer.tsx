@@ -1,10 +1,11 @@
-import { ShoppingItem } from '../components/ShoppingItem'
+import { ShoppingItem } from '@components/ShoppingItem'
+import flechita from '@icons/icon_close.png'
 
 export const ProductsContainer = (): JSX.Element => {
     return (
         <aside className="w-full sm:w-96 p-6 absolute right-0">
             <div className="flex">
-                <img className="rotate-180 mr-3.5" src="./icons/flechita.svg" alt="arrow" />
+                <img className="rotate-180 mr-3.5" src={flechita} alt="arrow" />
                 <p className="text-lg font-bold">My order</p>
             </div>
             <ShoppingItem />

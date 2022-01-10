@@ -1,3 +1,5 @@
+import close from '@icons/icon_close.png'
+
 export const ShoppingItem = (): JSX.Element => {
     return (
         <div className="grid grid-cols-5 gap-4 mb-6 items-center">
@@ -10,7 +12,7 @@ export const ShoppingItem = (): JSX.Element => {
             </figure>
             <p className="col-start-2 col-end-4 text-gray-400">Bike</p>
             <p className=" text-base font-bold">$30,00</p>
-            <img src="./icons/icon_close.png" alt="close"></img>
+            <img src={close} alt="close"></img>
         </div>
     )
 }

@@ -1,8 +1,11 @@
+
+import logo from '@logos/logo_yard_sale.svg'
+
 export const Login = (): JSX.Element => {
     return (
         <div className="w-full h-screen grid place-items-center">
             <div className="grid w-72">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" className="w-36 mb-12 justify-self-center sm:hidden" />
+                <img src={logo} alt="logo" className="w-36 mb-12 justify-self-center sm:hidden" />
                 <form action="/" className="flex flex-col">
                     <label htmlFor="email" className="text-sm font-bold mb-1">
                         Email address
