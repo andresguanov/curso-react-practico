@@ -1,3 +1,5 @@
+import addToCart from '@icons/bt_add_to_cart.svg'
+
 export const ProductCard = (): JSX.Element => {
     return (
         <div className="w-36 sm:w-60">
@@ -16,7 +18,7 @@ export const ProductCard = (): JSX.Element => {
                     </p>
                 </div>
                 <figure className="m-0">
-                    <img className="w-9 h-9 border-red-700" src="./icons/bt_add_to_cart.svg" alt="" />
+                    <img className="w-9 h-9 border-red-700 cursor-pointer" src={addToCart} alt="" />
                 </figure>
             </div>
         </div>

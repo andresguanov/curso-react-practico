@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Layout } from '../containers/Layout'
-import { Home } from '../pages/Home'
-import { Login } from '../pages/Login'
-import { NewPassword } from '../pages/NewPassword'
-import { Signup } from '../pages/Signup'
-import { EditAccount } from '../pages/EditAccount';
-import { NotFound } from '../pages/NotFound'
-import { EmailSent } from '../pages/EmailSent'
+import { Layout } from '@containers/Layout'
+import { Home } from '@pages/Home'
+import { Login } from '@pages/Login'
+import { NewPassword } from '@pages/NewPassword'
+import { Signup } from '@pages/Signup'
+import { EditAccount } from '@pages/EditAccount';
+import { NotFound } from '@pages/NotFound'
+import { EmailSent } from '@pages/EmailSent'
 
-import { Header } from "../components/Header"
+// import { MyOrderContainer } from "@containers/MyOrderContainer"
 
 
 function App(): JSX.Element {
@@ -28,7 +28,7 @@ function App(): JSX.Element {
             <Route path="/signup" element={<Signup />} /> {/*Create Account */}
             {/* Checkout */}
             {/* Orders */}
-            <Route path="/prueba" element={<Header />} />
+            {/* <Route path="/prueba" element={<MyOrderContainer />} /> */}
 
             <Route path="/*" element={<NotFound />} />
           </Routes>
